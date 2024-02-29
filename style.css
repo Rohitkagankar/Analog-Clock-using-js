@@ -18,6 +18,14 @@ body{
     justify-content: center;
     background: rgb(201, 200, 142);/*var(--primary-color);*/
 }
+
+h1{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 48px;
+    color: crimson;
+    text-decoration: underline;
+}
 .container{
 
 }
