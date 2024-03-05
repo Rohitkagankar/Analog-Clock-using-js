@@ -18,16 +18,39 @@ body{
     justify-content: center;
     background: rgb(201, 200, 142);/*var(--primary-color);*/
 }
-
-h1{
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 48px;
-    color: crimson;
-    text-decoration: underline;
+body.Dark{
+    background: #313131;
+    .mode-switch{
+        color: black;
+        background: white;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .container .clock{
+        background: #000;
+        color: white;
+    }
+    .clock label span {
+        color: white;
+    }
+    .hand.minute{
+        height: 120px;
+        width: 5px;
+        background: white;
+    }
+    .hand.hour{
+        height: 80px;
+        width: 5px;
+        background: white;
+    }
+    
 }
-.container{
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 }
 .container .clock{
     display: flex;
@@ -85,7 +108,17 @@ h1{
     background: #000;
 }
 .hand.hour{
-    height: 100px;
+    height: 80px;
     width: 5px;
     background: #000;
+}
+.mode-switch {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    display: inline-block;
+    color: white;
+    background: #000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
