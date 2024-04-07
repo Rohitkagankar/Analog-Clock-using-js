@@ -122,3 +122,9 @@ body.Dark{
     background: #000;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+footer{
+    position: absolute;
+    bottom: 5px;
+    color: rgb(255, 0, 166);
+    font-size: 12px;
+}
